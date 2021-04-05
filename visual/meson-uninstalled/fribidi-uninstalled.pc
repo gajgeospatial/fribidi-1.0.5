@@ -1,0 +1,10 @@
+prefix=C:/Development/op3d_active/fribidi-1.0.5/visual
+srcdir=C:/Development/op3d_active/fribidi-1.0.5
+libdir=${prefix}/lib
+includedir=${prefix}/include
+
+Name: GNU FriBidi
+Description: Unicode Bidirectional Algorithm Library
+Version: 1.0.5
+Libs: -L${prefix}/C:\Development\op3d_active\fribidi-1.0.5\visual\lib -lfribidi
+Cflags: -I${prefix}\lib -I${srcdir}\lib -I${prefix}\. -I${srcdir}\.

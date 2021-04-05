@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{34C52269-0EA4-46BF-8C9C-6D5DD6599AF0}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>gen-arabic-shaping-tab</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType />
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>gen-arabic-shaping-tab</TargetName>
+  </PropertyGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\meson-private\custom_target.rule">
+      <Command>setlocal
+..\..\..\..\..\Program Files (x86)\Python38-32\Scripts\meson --internal" exe" --unpickle" ..\meson-private\meson_exe_gen-arabic-shaping-tab_49db41357fff61d113d6145e142b26227b4cb931.dat"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Outputs>.\arabic-shaping.tab.i</Outputs>
+      <AdditionalInputs>..\meson-private\meson_exe_gen-arabic-shaping-tab_49db41357fff61d113d6145e142b26227b4cb931.dat;..\..\gen.tab\unidata\UnicodeData.txt;</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\REGEN.vcxproj">
+      <Project>{74F0C9F3-37DE-4AAD-BDC5-C48D20C8545F}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include=".\1a55e88@@gen-arabic-shaping-tab@exe.vcxproj">
+      <Project>{89808F45-34C1-4B29-A817-78817F765426}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

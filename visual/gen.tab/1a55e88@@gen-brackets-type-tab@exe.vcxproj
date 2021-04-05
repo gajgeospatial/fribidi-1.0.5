@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Debug|x64">
+      <Configuration>vs2019_Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BE1878A5-D039-4521-A31A-6DC0354D85FD}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+    <RootNamespace>gen-brackets-type-tab</RootNamespace>
+    <Platform>x64</Platform>
+    <ProjectName>gen-brackets-type-tab</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>1a55e88@@gen-brackets-type-tab@exe;.;..\..\gen.tab;..\..\.;..;..\..\lib;..\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level2</WarningLevel>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions />
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SubSystem>console</SubSystem>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>gen-brackets-type-tab</TargetName>
+    <TargetExt>.exe</TargetExt>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\gen.tab\meson.build" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\gen.tab\fribidi-unicode-version.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLCompile Include="..\..\gen.tab\gen-brackets-type-tab.c">
+      <AdditionalOptions>%(AdditionalOptions) "-UHAVE_CONFIG_H"</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_STRINGIZE;DONT_HAVE_FRIBIDI_CONFIG_H;HAVE_STDLIB_H;HAVE_STRING_H</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>1a55e88@@gen-brackets-type-tab@exe;.;..\..\gen.tab;..\..\.;..;..\..\lib;..\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)gen-brackets-type-tab.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\gen.tab\packtab.c">
+      <AdditionalOptions>%(AdditionalOptions) "-UHAVE_CONFIG_H"</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_STRINGIZE;DONT_HAVE_FRIBIDI_CONFIG_H;HAVE_STDLIB_H;HAVE_STRING_H</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>1a55e88@@gen-brackets-type-tab@exe;.;..\..\gen.tab;..\..\.;..;..\..\lib;..\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)packtab.c.obj</ObjectFileName>
+    </CLCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\REGEN.vcxproj">
+      <Project>{74F0C9F3-37DE-4AAD-BDC5-C48D20C8545F}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include=".\1a55e88@@fribidi-unicode-version.h@cus.vcxproj">
+      <Project>{E8D3F6C6-91CB-41E6-AB90-44D8E3AED885}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

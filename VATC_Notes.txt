@@ -1,0 +1,9 @@
+Require Python >= 3.7 (install for all users)
+use Python to install meson
+Administrator command prompt "pyton -m pip install meson"
+
+Build solution with.
+
+meson setup visual --backend vs2017 -Ddocs=false
+
+build prerequists in solution and disregard all except library.

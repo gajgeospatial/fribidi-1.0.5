@@ -1,0 +1,90 @@
+<?xml version="1.0" ?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+	<ItemGroup Label="ProjectConfigurations">
+		<ProjectConfiguration Include="debug|x64">
+			<Configuration>debug</Configuration>
+			<Platform>x64</Platform>
+		</ProjectConfiguration>
+	</ItemGroup>
+	<PropertyGroup Label="Globals">
+		<ProjectGuid>{12175C49-8020-457A-B7AD-B8F8E1ADE996}</ProjectGuid>
+		<Keyword>x64Proj</Keyword>
+		<RootNamespace>BidiTest</RootNamespace>
+		<Platform>x64</Platform>
+		<ProjectName>BidiTest</ProjectName>
+		<WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+	</PropertyGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"/>
+	<PropertyGroup Label="Configuration">
+		<ConfigurationType>Application</ConfigurationType>
+		<CharacterSet>MultiByte</CharacterSet>
+		<PlatformToolset>v142</PlatformToolset>
+		<WholeProgramOptimization>false</WholeProgramOptimization>
+		<BasicRuntimeChecks>Default</BasicRuntimeChecks>
+		<UseDebugLibraries>true</UseDebugLibraries>
+	</PropertyGroup>
+	<ItemDefinitionGroup>
+		<ClCompile>
+			<RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+			<DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+			<AdditionalIncludeDirectories>3119dfc@@BidiTest@exe;.;..\..\..\test\unicode-conformance;..\..\..\.;..\..;..\..\..\lib;..\..\lib;..\..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
+			<FunctionLevelLinking>true</FunctionLevelLinking>
+			<WarningLevel>Level2</WarningLevel>
+			<FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+		</ClCompile>
+		<ResourceCompile>
+			<PreprocessorDefinitions/>
+		</ResourceCompile>
+		<Link>
+			<GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+			<AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\lib\fribidi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+			<OutputFile>$(OutDir)BidiTest.exe</OutputFile>
+			<SubSystem>console</SubSystem>
+			<ProgramDataBaseFileName>$(OutDir}BidiTest.pdb</ProgramDataBaseFileName>
+			<TargetMachine>MachineX64</TargetMachine>
+			<SuppressStartupBanner>true</SuppressStartupBanner>
+		</Link>
+	</ItemDefinitionGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.props"/>
+	<PropertyGroup>
+		<_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+		<OutDir>.\</OutDir>
+		<IntDir>3119dfc@@BidiTest@exe\</IntDir>
+		<TargetName>BidiTest</TargetName>
+		<TargetExt>.exe</TargetExt>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="..\..\..\test\unicode-conformance\meson.build"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CLInclude Include="..\..\gen.tab\fribidi-unicode-version.h"/>
+	</ItemGroup>
+	<ItemGroup>
+		<CLCompile Include="..\..\..\test\unicode-conformance\BidiTest.c">
+			<AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+			<PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_CONFIG_H</PreprocessorDefinitions>
+			<AdditionalIncludeDirectories>3119dfc@@BidiTest@exe;.;..\..\..\test\unicode-conformance;..\..\..\.;..\..;..\..\..\lib;..\..\lib;..\..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+			<ObjectFileName>$(IntDir)BidiTest.c.obj</ObjectFileName>
+		</CLCompile>
+	</ItemGroup>
+	<Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets"/>
+	<ItemGroup>
+		<ProjectReference Include="C:\Development\op3d_active\fribidi-1.0.5\visual\REGEN.vcxproj">
+			<Project>{74F0C9F3-37DE-4AAD-BDC5-C48D20C8545F}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\lib\76b5a35@@fribidi@sha.vcxproj">
+			<Project>{07B185A5-3438-4FC6-AC55-F0626348B0B0}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\..\gen.tab\1a55e88@@fribidi-unicode-version.h@cus.vcxproj">
+			<Project>{E8D3F6C6-91CB-41E6-AB90-44D8E3AED885}</Project>
+			<LinkLibraryDependencies>false</LinkLibraryDependencies>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

@@ -1,0 +1,458 @@
+Build started at 2021-04-04T21:32:29.721861
+Main binary: c:\program files (x86)\python38-32\python.exe
+Build Options: -Ddocs=false -Dbackend=vs2019
+Python system: Windows
+The Meson build system
+Version: 0.57.1
+Source dir: C:\Development\op3d_active\fribidi-1.0.5
+Build dir: C:\Development\op3d_active\fribidi-1.0.5\visual
+Build type: native build
+Project name: fribidi
+Project version: 1.0.5
+Sanity testing C compiler: cl
+Is cross compiler: False.
+Sanity check compiler command line: cl C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\sanitycheckc.c /FeC:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\sanitycheckc.exe /MDd /nologo /showIncludes /link
+Sanity check compile stdout:
+sanitycheckc.c
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\sanitycheckc.exe
+C compiler for the host machine: cl (msvc 19.26.28806 "Microsoft (R) C/C++ Optimizing Compiler Version 19.26.28806 for x64")
+C linker for the host machine: link link 14.26.28806.0
+Sanity testing C compiler: cl
+Is cross compiler: False.
+Sanity check compiler command line: cl C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\sanitycheckc.c /FeC:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\sanitycheckc.exe /MDd /nologo /showIncludes /link
+Sanity check compile stdout:
+sanitycheckc.c
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\sanitycheckc.exe
+C compiler for the build machine: cl (msvc 19.26.28806 "Microsoft (R) C/C++ Optimizing Compiler Version 19.26.28806 for x64")
+C linker for the build machine: link link 14.26.28806.0
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Running compile:
+Working directory:  C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmp18_imgrb
+Command line:  cl C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmp18_imgrb\testfile.c /FoC:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmp18_imgrb\output.obj /nologo /showIncludes /c /nologo /showIncludes /c /Od -fvisibility=hidden 
+
+Code:
+ extern int i;
+int i;
+
+Compiler stdout:
+ testfile.c
+
+Compiler stderr:
+ cl : Command line warning D9002 : ignoring unknown option '-fvisibility=hidden'
+
+Compiler for C supports arguments -fvisibility=hidden: NO 
+Running compile:
+Working directory:  C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmphjwa5wd6
+Command line:  cl C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmphjwa5wd6\testfile.c /FeC:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmphjwa5wd6\output.exe /nologo /showIncludes /MDd /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define memmove meson_disable_define_of_memmove
+        
+        #include <limits.h>
+        #undef memmove
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char memmove (void);
+        
+        #if defined __stub_memmove || defined __stub___memmove
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return memmove ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\vadefs.h
+
+Compiler stderr:
+ 
+Checking for function "memmove" : YES 
+Running compile:
+Working directory:  C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmpyoery6ov
+Command line:  cl C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmpyoery6ov\testfile.c /FeC:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmpyoery6ov\output.exe /nologo /showIncludes /MDd /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define memset meson_disable_define_of_memset
+        
+        #include <limits.h>
+        #undef memset
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char memset (void);
+        
+        #if defined __stub_memset || defined __stub___memset
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return memset ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\vadefs.h
+
+Compiler stderr:
+ 
+Checking for function "memset" : YES 
+Running compile:
+Working directory:  C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmpm58i83gb
+Command line:  cl C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmpm58i83gb\testfile.c /FeC:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmpm58i83gb\output.exe /nologo /showIncludes /MDd /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ 
+        #define strdup meson_disable_define_of_strdup
+        
+        #include <limits.h>
+        #undef strdup
+        
+        #ifdef __cplusplus
+        extern "C"
+        #endif
+        char strdup (void);
+        
+        #if defined __stub_strdup || defined __stub___strdup
+        fail fail fail this function is not going to work
+        #endif
+        
+        int main(void) {
+          return strdup ();
+        }
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\limits.h
+Note: including file:  C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\vcruntime.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\sal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\concurrencysal.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\vadefs.h
+
+Compiler stderr:
+ 
+Checking for function "strdup" : YES 
+Running compile:
+Working directory:  C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmppik4pzw0
+Command line:  cl C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmppik4pzw0\testfile.c /nologo /showIncludes /EP /nologo /showIncludes /EP /Od 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("stdlib.h")
+          #error "Header 'stdlib.h' could not be found"
+         #endif
+        #else
+         #include <stdlib.h>
+        #endif
+Compiler stdout:
+ 
+
+        
+         
+
+
+        
+
+
+
+Compiler stderr:
+ testfile.c
+
+Has header "stdlib.h" : YES 
+Running compile:
+Working directory:  C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmpfjabtums
+Command line:  cl C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmpfjabtums\testfile.c /nologo /showIncludes /EP /nologo /showIncludes /EP /Od 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("string.h")
+          #error "Header 'string.h' could not be found"
+         #endif
+        #else
+         #include <string.h>
+        #endif
+Compiler stdout:
+ 
+
+        
+         
+
+
+        
+
+
+
+Compiler stderr:
+ testfile.c
+
+Has header "string.h" : YES 
+Running compile:
+Working directory:  C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmpnvcgx_ij
+Command line:  cl C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmpnvcgx_ij\testfile.c /nologo /showIncludes /EP /nologo /showIncludes /EP /Od 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("memory.h")
+          #error "Header 'memory.h' could not be found"
+         #endif
+        #else
+         #include <memory.h>
+        #endif
+Compiler stdout:
+ 
+
+        
+         
+
+
+        
+
+
+
+Compiler stderr:
+ testfile.c
+
+Has header "memory.h" : YES 
+Running compile:
+Working directory:  C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmp6ne_jwiv
+Command line:  cl C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmp6ne_jwiv\testfile.c /nologo /showIncludes /EP /nologo /showIncludes /EP /Od 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("strings.h")
+          #error "Header 'strings.h' could not be found"
+         #endif
+        #else
+         #include <strings.h>
+        #endif
+Compiler stdout:
+ 
+
+        
+         
+          
+Compiler stderr:
+ testfile.c
+C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmp6ne_jwiv\testfile.c(4): fatal error C1189: #error:  "Header 'strings.h' could not be found"
+
+Has header "strings.h" : NO 
+Running compile:
+Working directory:  C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmpf5oyrrew
+Command line:  cl C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmpf5oyrrew\testfile.c /nologo /showIncludes /EP /nologo /showIncludes /EP /Od 
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("sys/times.h")
+          #error "Header 'sys/times.h' could not be found"
+         #endif
+        #else
+         #include <sys/times.h>
+        #endif
+Compiler stdout:
+ 
+
+        
+         
+          
+Compiler stderr:
+ testfile.c
+C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmpf5oyrrew\testfile.c(4): fatal error C1189: #error:  "Header 'sys/times.h' could not be found"
+
+Has header "sys/times.h" : NO 
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("strings.h")
+          #error "Header 'strings.h' could not be found"
+         #endif
+        #else
+         #include <strings.h>
+        #endif
+Cached compiler stdout:
+ 
+
+        
+         
+          
+Cached compiler stderr:
+ testfile.c
+C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmp6ne_jwiv\testfile.c(4): fatal error C1189: #error:  "Header 'strings.h' could not be found"
+
+Has header "strings.h" : NO (cached)
+Configuring config.h using configuration
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("stdlib.h")
+          #error "Header 'stdlib.h' could not be found"
+         #endif
+        #else
+         #include <stdlib.h>
+        #endif
+Cached compiler stdout:
+ 
+
+        
+         
+
+
+        
+
+
+
+Cached compiler stderr:
+ testfile.c
+
+Has header "stdlib.h" : YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("string.h")
+          #error "Header 'string.h' could not be found"
+         #endif
+        #else
+         #include <string.h>
+        #endif
+Cached compiler stdout:
+ 
+
+        
+         
+
+
+        
+
+
+
+Cached compiler stderr:
+ testfile.c
+
+Has header "string.h" : YES (cached)
+Using cached compile:
+Cached command line:   
+
+Code:
+ 
+        #ifdef __has_include
+         #if !__has_include("strings.h")
+          #error "Header 'strings.h' could not be found"
+         #endif
+        #else
+         #include <strings.h>
+        #endif
+Cached compiler stdout:
+ 
+
+        
+         
+          
+Cached compiler stderr:
+ testfile.c
+C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmp6ne_jwiv\testfile.c(4): fatal error C1189: #error:  "Header 'strings.h' could not be found"
+
+Has header "strings.h" : NO (cached)
+Running compile:
+Working directory:  C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmppbxlwtsx
+Command line:  cl C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmppbxlwtsx\testfile.c /FeC:\Development\op3d_active\fribidi-1.0.5\visual\meson-private\tmppbxlwtsx\output.exe /nologo /showIncludes /MDd /nologo /showIncludes /Od kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
+
+Code:
+ #include<stdio.h>
+        
+        int main(void) {
+            printf("%ld\n", (long)(sizeof(int)));
+            return 0;
+        };
+Compiler stdout:
+ testfile.c
+Note: including file: C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\stdio.h
+Note: including file:  C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt.h
+Note: including file:   C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\vcruntime.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\sal.h
+Note: including file:     C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\concurrencysal.h
+Note: including file:    C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Tools\MSVC\14.26.28801\include\vadefs.h
+Note: including file:  C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_wstdio.h
+Note: including file:   C:\Program Files (x86)\Windows Kits\10\include\10.0.18362.0\ucrt\corecrt_stdio_config.h
+
+Compiler stderr:
+ 
+Program stdout:
+
+4
+
+Program stderr:
+
+
+Checking for size of "int" : 4
+Configuring fribidi-config.h using configuration
+Program test-runner.py found: YES (c:\program files (x86)\python38-32\python.exe C:\Development\op3d_active\fribidi-1.0.5\test\test-runner.py)
+Adding test "CapRTL_explicit"
+Adding test "CapRTL_implicit"
+Adding test "CapRTL_isolate"
+Adding test "ISO8859-8_hebrew"
+Adding test "UTF-8_persian"
+Adding test "UTF-8_reordernsm"
+Adding test "BidiTest"
+Adding test "BidiCharacterTest"
+Build targets in project: 21
+
+Generating vcxproj gen-unicode-version.
+Generating vcxproj fribidi-unicode-version.h.
+Generating vcxproj gen-bidi-type-tab.
+Generating vcxproj gen-bidi-type-tab.
+Generating vcxproj gen-joining-type-tab.
+Generating vcxproj gen-joining-type-tab.
+Generating vcxproj gen-arabic-shaping-tab.
+Generating vcxproj gen-arabic-shaping-tab.
+Generating vcxproj gen-mirroring-tab.
+Generating vcxproj gen-mirroring-tab.
+Generating vcxproj gen-brackets-tab.
+Generating vcxproj gen-brackets-tab.
+Generating vcxproj gen-brackets-type-tab.
+Generating vcxproj gen-brackets-type-tab.
+Generating vcxproj fribidi.
+Generating vcxproj fribidi.
+Generating vcxproj fribidi-benchmark.
+Generating vcxproj fribidi-bidi-types.
+Generating vcxproj fribidi-caprtl2utf8.
+Generating vcxproj BidiTest.
+Generating vcxproj BidiCharacterTest.

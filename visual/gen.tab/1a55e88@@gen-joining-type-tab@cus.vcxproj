@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B6DE082C-3D0D-4269-A610-7462F5C5BB33}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>gen-joining-type-tab</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType />
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>gen-joining-type-tab</TargetName>
+  </PropertyGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\meson-private\custom_target.rule">
+      <Command>setlocal
+..\..\..\..\..\Program Files (x86)\Python38-32\Scripts\meson --internal" exe" --unpickle" ..\meson-private\meson_exe_gen-joining-type-tab_c7b5c736bfff312d43773b3d0b8428d8f2ead810.dat"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Outputs>.\joining-type.tab.i</Outputs>
+      <AdditionalInputs>..\meson-private\meson_exe_gen-joining-type-tab_c7b5c736bfff312d43773b3d0b8428d8f2ead810.dat;..\..\gen.tab\unidata\UnicodeData.txt;..\..\gen.tab\unidata\ArabicShaping.txt;</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\REGEN.vcxproj">
+      <Project>{74F0C9F3-37DE-4AAD-BDC5-C48D20C8545F}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include=".\1a55e88@@gen-joining-type-tab@exe.vcxproj">
+      <Project>{C85A63F3-0F99-442A-9E74-118312C2ABC8}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

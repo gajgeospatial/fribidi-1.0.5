@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="vs2019_Release|x64">
+      <Configuration>vs2019_Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{07B185A5-3438-4FC6-AC55-F0626348B0B0}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+    <RootNamespace>fribidi</RootNamespace>
+    <Platform>x64</Platform>
+    <ProjectName>fribidi</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>76b5a35@@fribidi@sha;.;..\..\lib;..\..\.;..;..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <WarningLevel>Level2</WarningLevel>
+      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
+      <SupportJustMyCode Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</SupportJustMyCode>
+      <SupportJustMyCode Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</SupportJustMyCode>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</SuppressStartupBanner>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">true</SuppressStartupBanner>
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</TreatWarningAsError>
+      <TreatWarningAsError Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</TreatWarningAsError>
+      <DiagnosticsFormat Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Classic</DiagnosticsFormat>
+      <DiagnosticsFormat Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Classic</DiagnosticsFormat>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MaxSpeed</Optimization>
+      <Optimization Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">MaxSpeed</Optimization>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='Release|x64'">AnySuitable</InlineFunctionExpansion>
+      <InlineFunctionExpansion Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">AnySuitable</InlineFunctionExpansion>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</IntrinsicFunctions>
+      <IntrinsicFunctions Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">true</IntrinsicFunctions>
+      <OmitFramePointers Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</OmitFramePointers>
+      <OmitFramePointers Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">true</OmitFramePointers>
+      <EnableFiberSafeOptimizations Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</EnableFiberSafeOptimizations>
+      <EnableFiberSafeOptimizations Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">true</EnableFiberSafeOptimizations>
+      <WholeProgramOptimization Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</WholeProgramOptimization>
+      <WholeProgramOptimization Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</WholeProgramOptimization>
+      <UndefineAllPreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</UndefineAllPreprocessorDefinitions>
+      <UndefineAllPreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</UndefineAllPreprocessorDefinitions>
+      <IgnoreStandardIncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</IgnoreStandardIncludePath>
+      <IgnoreStandardIncludePath Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</IgnoreStandardIncludePath>
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</PreprocessToFile>
+      <PreprocessToFile Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</PreprocessToFile>
+      <PreprocessSuppressLineNumbers Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</PreprocessSuppressLineNumbers>
+      <PreprocessSuppressLineNumbers Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</PreprocessSuppressLineNumbers>
+      <PreprocessKeepComments Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</PreprocessKeepComments>
+      <PreprocessKeepComments Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</PreprocessKeepComments>
+      <MinimalRebuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</MinimalRebuild>
+      <MinimalRebuild Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</MinimalRebuild>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Sync</ExceptionHandling>
+      <ExceptionHandling Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Sync</ExceptionHandling>
+      <SmallerTypeCheck Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</SmallerTypeCheck>
+      <SmallerTypeCheck Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</SmallerTypeCheck>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Default</BasicRuntimeChecks>
+      <BasicRuntimeChecks Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Default</BasicRuntimeChecks>
+      <BufferSecurityCheck Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</BufferSecurityCheck>
+      <BufferSecurityCheck Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">true</BufferSecurityCheck>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotSet</EnableEnhancedInstructionSet>
+      <EnableEnhancedInstructionSet Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">NotSet</EnableEnhancedInstructionSet>
+      <FloatingPointModel Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Precise</FloatingPointModel>
+      <FloatingPointModel Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Precise</FloatingPointModel>
+      <DisableLanguageExtensions Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</DisableLanguageExtensions>
+      <DisableLanguageExtensions Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</DisableLanguageExtensions>
+      <TreatWChar_tAsBuiltInType Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</TreatWChar_tAsBuiltInType>
+      <TreatWChar_tAsBuiltInType Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">true</TreatWChar_tAsBuiltInType>
+      <ForceConformanceInForLoopScope Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ForceConformanceInForLoopScope>
+      <ForceConformanceInForLoopScope Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">true</ForceConformanceInForLoopScope>
+      <RemoveUnreferencedCodeData Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</RemoveUnreferencedCodeData>
+      <RemoveUnreferencedCodeData Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">true</RemoveUnreferencedCodeData>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">NotUsing</PrecompiledHeader>
+      <ExpandAttributedSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExpandAttributedSource>
+      <ExpandAttributedSource Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</ExpandAttributedSource>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NoListing</AssemblerOutput>
+      <AssemblerOutput Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">NoListing</AssemblerOutput>
+      <AssemblerListingLocation Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)</AssemblerListingLocation>
+      <AssemblerListingLocation Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(IntDir)</AssemblerListingLocation>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)</ObjectFileName>
+      <ObjectFileName Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(IntDir)</ObjectFileName>
+      <ProgramDataBaseFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <ProgramDataBaseFileName Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <GenerateXMLDocumentationFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateXMLDocumentationFiles>
+      <GenerateXMLDocumentationFiles Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</GenerateXMLDocumentationFiles>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)</XMLDocumentationFileName>
+      <XMLDocumentationFileName Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(IntDir)</XMLDocumentationFileName>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</BrowseInformation>
+      <BrowseInformation Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</BrowseInformation>
+      <BrowseInformationFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(IntDir)</BrowseInformationFile>
+      <BrowseInformationFile Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">$(IntDir)</BrowseInformationFile>
+      <CallingConvention Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Cdecl</CallingConvention>
+      <CallingConvention Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Cdecl</CallingConvention>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Default</CompileAs>
+      <CompileAs Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Default</CompileAs>
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ShowIncludes>
+      <ShowIncludes Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</ShowIncludes>
+      <UseFullPaths Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</UseFullPaths>
+      <UseFullPaths Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">true</UseFullPaths>
+      <OmitDefaultLibName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</OmitDefaultLibName>
+      <OmitDefaultLibName Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">false</OmitDefaultLibName>
+      <ErrorReporting Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Prompt</ErrorReporting>
+      <ErrorReporting Condition="'$(Configuration)|$(Platform)'=='vs2019_Release|x64'">Prompt</ErrorReporting>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions />
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <SubSystem>Windows</SubSystem>
+      <ImportLibrary>$(OutDir)fribidi.lib</ImportLibrary>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <TargetMachine>MachineX64</TargetMachine>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>fribidi</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="..\..\lib\meson.build" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLInclude Include="..\lib\fribidi-config.h" />
+    <CLInclude Include="..\config.h" />
+    <CLInclude Include="..\gen.tab\fribidi-unicode-version.h" />
+    <CLInclude Include="..\gen.tab\bidi-type.tab.i" />
+    <CLInclude Include="..\gen.tab\joining-type.tab.i" />
+    <CLInclude Include="..\gen.tab\arabic-shaping.tab.i" />
+    <CLInclude Include="..\gen.tab\mirroring.tab.i" />
+    <CLInclude Include="..\gen.tab\brackets.tab.i" />
+    <CLInclude Include="..\gen.tab\brackets-type.tab.i" />
+  </ItemGroup>
+  <ItemGroup>
+    <CLCompile Include="..\..\lib\fribidi.c">
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_CONFIG_H;FRIBIDI_ENTRY=__declspec(dllexport)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>76b5a35@@fribidi@sha;.;..\..\lib;..\..\.;..;..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)fribidi.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\lib\fribidi-arabic.c">
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_CONFIG_H;FRIBIDI_ENTRY=__declspec(dllexport)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>76b5a35@@fribidi@sha;.;..\..\lib;..\..\.;..;..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)fribidi-arabic.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\lib\fribidi-bidi.c">
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_CONFIG_H;FRIBIDI_ENTRY=__declspec(dllexport)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>76b5a35@@fribidi@sha;.;..\..\lib;..\..\.;..;..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)fribidi-bidi.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\lib\fribidi-bidi-types.c">
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_CONFIG_H;FRIBIDI_ENTRY=__declspec(dllexport)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>76b5a35@@fribidi@sha;.;..\..\lib;..\..\.;..;..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)fribidi-bidi-types.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\lib\fribidi-char-sets.c">
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_CONFIG_H;FRIBIDI_ENTRY=__declspec(dllexport)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>76b5a35@@fribidi@sha;.;..\..\lib;..\..\.;..;..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)fribidi-char-sets.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\lib\fribidi-char-sets-cap-rtl.c">
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_CONFIG_H;FRIBIDI_ENTRY=__declspec(dllexport)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>76b5a35@@fribidi@sha;.;..\..\lib;..\..\.;..;..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)fribidi-char-sets-cap-rtl.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\lib\fribidi-char-sets-cp1255.c">
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_CONFIG_H;FRIBIDI_ENTRY=__declspec(dllexport)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>76b5a35@@fribidi@sha;.;..\..\lib;..\..\.;..;..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)fribidi-char-sets-cp1255.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\lib\fribidi-char-sets-cp1256.c">
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_CONFIG_H;FRIBIDI_ENTRY=__declspec(dllexport)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>76b5a35@@fribidi@sha;.;..\..\lib;..\..\.;..;..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)fribidi-char-sets-cp1256.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\lib\fribidi-char-sets-iso8859-6.c">
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_CONFIG_H;FRIBIDI_ENTRY=__declspec(dllexport)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>76b5a35@@fribidi@sha;.;..\..\lib;..\..\.;..;..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)fribidi-char-sets-iso8859-6.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\lib\fribidi-char-sets-iso8859-8.c">
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_CONFIG_H;FRIBIDI_ENTRY=__declspec(dllexport)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>76b5a35@@fribidi@sha;.;..\..\lib;..\..\.;..;..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)fribidi-char-sets-iso8859-8.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\lib\fribidi-char-sets-utf8.c">
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_CONFIG_H;FRIBIDI_ENTRY=__declspec(dllexport)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>76b5a35@@fribidi@sha;.;..\..\lib;..\..\.;..;..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)fribidi-char-sets-utf8.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\lib\fribidi-deprecated.c">
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_CONFIG_H;FRIBIDI_ENTRY=__declspec(dllexport)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>76b5a35@@fribidi@sha;.;..\..\lib;..\..\.;..;..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)fribidi-deprecated.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\lib\fribidi-joining.c">
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_CONFIG_H;FRIBIDI_ENTRY=__declspec(dllexport)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>76b5a35@@fribidi@sha;.;..\..\lib;..\..\.;..;..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)fribidi-joining.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\lib\fribidi-joining-types.c">
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_CONFIG_H;FRIBIDI_ENTRY=__declspec(dllexport)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>76b5a35@@fribidi@sha;.;..\..\lib;..\..\.;..;..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)fribidi-joining-types.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\lib\fribidi-mirroring.c">
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_CONFIG_H;FRIBIDI_ENTRY=__declspec(dllexport)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>76b5a35@@fribidi@sha;.;..\..\lib;..\..\.;..;..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)fribidi-mirroring.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\lib\fribidi-brackets.c">
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_CONFIG_H;FRIBIDI_ENTRY=__declspec(dllexport)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>76b5a35@@fribidi@sha;.;..\..\lib;..\..\.;..;..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)fribidi-brackets.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\lib\fribidi-run.c">
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_CONFIG_H;FRIBIDI_ENTRY=__declspec(dllexport)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>76b5a35@@fribidi@sha;.;..\..\lib;..\..\.;..;..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)fribidi-run.c.obj</ObjectFileName>
+    </CLCompile>
+    <CLCompile Include="..\..\lib\fribidi-shape.c">
+      <AdditionalOptions>%(AdditionalOptions)</AdditionalOptions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);HAVE_CONFIG_H;FRIBIDI_ENTRY=__declspec(dllexport)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>76b5a35@@fribidi@sha;.;..\..\lib;..\..\.;..;..\gen.tab;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ObjectFileName>$(IntDir)fribidi-shape.c.obj</ObjectFileName>
+    </CLCompile>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>

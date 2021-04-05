@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EA4C7DC9-BEB0-4949-8E74-B3446E9BA823}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>gen-brackets-type-tab</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType />
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>gen-brackets-type-tab</TargetName>
+  </PropertyGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\meson-private\custom_target.rule">
+      <Command>setlocal
+..\..\..\..\..\Program Files (x86)\Python38-32\Scripts\meson --internal" exe" --unpickle" ..\meson-private\meson_exe_gen-brackets-type-tab_6f7d15c54fbce3806cf8dd690f81408c47a9dd82.dat"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Outputs>.\brackets-type.tab.i</Outputs>
+      <AdditionalInputs>..\meson-private\meson_exe_gen-brackets-type-tab_6f7d15c54fbce3806cf8dd690f81408c47a9dd82.dat;..\..\gen.tab\unidata\BidiBrackets.txt;</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\REGEN.vcxproj">
+      <Project>{74F0C9F3-37DE-4AAD-BDC5-C48D20C8545F}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include=".\1a55e88@@gen-brackets-type-tab@exe.vcxproj">
+      <Project>{BE1878A5-D039-4521-A31A-6DC0354D85FD}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

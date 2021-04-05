@@ -1,0 +1,11 @@
+^C:\DEVELOPMENT\OP3D_ACTIVE\FRIBIDI-1.0.5\VISUAL\MESON-PRIVATE\REGEN.RULE
+setlocal
+call "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\VC\Auxiliary\Build\vcvarsall.bat" x64 > NUL
+"C:\Program Files (x86)\Python38-32\Scripts\meson" "--internal" "regencheck" "C:\Development\op3d_active\fribidi-1.0.5\visual\meson-private"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

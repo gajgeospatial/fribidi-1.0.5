@@ -1,0 +1,6 @@
+[options]
+docs = false
+backend = vs2019
+
+[properties]
+

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build" ToolsVersion="4.0">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="debug|x64">
+      <Configuration>debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E8D3F6C6-91CB-41E6-AB90-44D8E3AED885}</ProjectGuid>
+    <Keyword>x64Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>fribidi-unicode-version.h</ProjectName>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType />
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>false</UseOfMfc>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir>$(SolutionDir)vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectName).dir\vc$(PlatformToolsetVersion)\$(Platform)\$(Configuration)\</IntDir>
+    <TargetName>fribidi-unicode-version.h</TargetName>
+  </PropertyGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\meson-private\custom_target.rule">
+      <Command>setlocal
+..\..\..\..\..\Program Files (x86)\Python38-32\Scripts\meson --internal" exe" --unpickle" ..\meson-private\meson_exe_gen-unicode-version_e33f86097fb6d73b96219de9122f6a56cfaa51d8.dat"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <Outputs>.\fribidi-unicode-version.h</Outputs>
+      <AdditionalInputs>..\meson-private\meson_exe_gen-unicode-version_e33f86097fb6d73b96219de9122f6a56cfaa51d8.dat;..\..\gen.tab\unidata\ReadMe.txt;..\..\gen.tab\unidata\BidiMirroring.txt;</AdditionalInputs>
+    </CustomBuild>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ItemGroup>
+    <ProjectReference Include=".\1a55e88@@gen-unicode-version@exe.vcxproj">
+      <Project>{B12E831A-259F-45DF-BA3C-0D0172D2144D}</Project>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemGroup>
+</Project>
