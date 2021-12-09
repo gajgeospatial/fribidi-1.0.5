@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.0.31903.59
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30225.117
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lib", "lib", "{5ECA2CDC-7B45-5683-B9ED-84FE5145E935}"
 EndProject
@@ -8,10 +8,16 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "fribidi", "lib\76b5a35@@fri
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		vs2019_Debug|x64 = vs2019_Debug|x64
+		vs2019_Release|x64 = vs2019_Release|x64
 		vs2022_Debug|x64 = vs2022_Debug|x64
 		vs2022_Release|x64 = vs2022_Release|x64
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{07B185A5-3438-4FC6-AC55-F0626348B0B0}.vs2019_Debug|x64.ActiveCfg = vs2019_Debug|x64
+		{07B185A5-3438-4FC6-AC55-F0626348B0B0}.vs2019_Debug|x64.Build.0 = vs2019_Debug|x64
+		{07B185A5-3438-4FC6-AC55-F0626348B0B0}.vs2019_Release|x64.ActiveCfg = vs2019_Release|x64
+		{07B185A5-3438-4FC6-AC55-F0626348B0B0}.vs2019_Release|x64.Build.0 = vs2019_Release|x64
 		{07B185A5-3438-4FC6-AC55-F0626348B0B0}.vs2022_Debug|x64.ActiveCfg = vs2022_Debug|x64
 		{07B185A5-3438-4FC6-AC55-F0626348B0B0}.vs2022_Debug|x64.Build.0 = vs2022_Debug|x64
 		{07B185A5-3438-4FC6-AC55-F0626348B0B0}.vs2022_Release|x64.ActiveCfg = vs2022_Release|x64
